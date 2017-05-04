@@ -37,7 +37,7 @@ ggplot(data2,aes(x=date,y=steps))+geom_bar(stat = "identity")+
   theme_bw()+theme(axis.text.x = element_text(angle=90,hjust = 0))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](instructions_fig/unnamed-chunk-2-1.png)<!-- -->
   
 Do univariate analysis - calculate the mean and median of the steps taken every day
 
@@ -66,7 +66,7 @@ names(data3)=c("interval","steps")
 ggplot(data3,aes(x=interval,y=steps))+geom_line()+scale_x_continuous(breaks = seq(0000,2355,25))+theme(axis.text.x = element_text(angle=90,hjust = 0))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](instructions_fig/unnamed-chunk-4-1.png)<!-- -->
 
 Identify the 5 minute interval which has the maximum number of steps
 
@@ -97,7 +97,7 @@ ggplot(data5,aes(x=date,y=steps))+geom_bar(stat = "identity")+
   theme_bw()+theme(axis.text.x = element_text(angle=90,hjust = 0))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](instructions_fig/unnamed-chunk-7-1.png)<!-- -->
 
 What is the the mean and median of the steps taken every day after the data has been fixed
 
@@ -130,7 +130,7 @@ names(data5)=c("Interval","daytype","steps")
 ggplot(data5,aes(x=Interval,y=steps,group=daytype))+geom_line()+facet_wrap(~daytype)+scale_x_continuous(breaks = seq(0000,2355,50))+theme(axis.text.x = element_text(angle=90,hjust = 0))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](instructions_fig/unnamed-chunk-9-1.png)<!-- -->
 
 Looking at the data we could make this Inference
 
